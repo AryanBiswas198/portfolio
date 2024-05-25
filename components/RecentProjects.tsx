@@ -1,9 +1,19 @@
+"use client";
+
 import { projects } from '@/data'
 import React from 'react'
 import { PinContainer } from './ui/3d-pin'
 import { FaLocationArrow } from 'react-icons/fa6'
+import { useRouter } from 'next/navigation'
 
 const RecentProjects = () => {
+    
+    const router = useRouter();
+
+    const handleRedirect = (link: string) => {
+        router.push(link);
+    }
+    
   return (
     <div className='py-20' id='projects'>
         <h1 className='heading'>
@@ -13,13 +23,14 @@ const RecentProjects = () => {
 
         <div className='flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10'>
             {projects.map(({id, title, des, img, iconLists, link}) => (
-                <div key={id} className='sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]'>
+                <div key={id} className='sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]'
+                    onClick={() => handleRedirect(link)}>
                     <PinContainer title={title} href={link}>
                         <div className='relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10'>
                             <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]'>
                                 <img src='/bg.png' alt='bg-img' />
                             </div>
-                            <img src={img} alt={title} className='z-10 absolute bottom-0' />
+                            <img src={img} alt={title} className='z-10' />
                         </div>
 
                         <h1 className='font-bold lg:text-2xl md:text-xl text-base line-clamp-1'>
@@ -43,7 +54,7 @@ const RecentProjects = () => {
                             </div>
 
                             <div className='flex justify-center items-center'>
-                                <p className='flex lg:text-xl md:text-xs text-sm text-purple'>Check Live Site</p>
+                                <p className='flex lg:text-xl md:text-xs tracking-wider text-sm text-purple'>Check Live Site</p>
                                 <FaLocationArrow className='ms-3' color='#CBACF9' />
                             </div>
                         </div>
