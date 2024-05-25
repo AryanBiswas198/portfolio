@@ -33,15 +33,15 @@ const Approach = () => {
             >
           <CanvasRevealEffect
             animationSpeed={3}
-            containerClassName="bg-black"
+            containerClassName="bg-pink-700"
             colors={[
-              [236, 72, 153],
-              [232, 121, 249],
+              [255, 193, 17],
+              [255, 255, 255],
             ]}
-            dotSize={2}
+            // dotSize={2}
           />
           {/* Radial gradient for the cute fade */}
-          <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
+          {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
         </Card>
         <Card 
             title="Development & Launch" 
