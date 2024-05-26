@@ -172,10 +172,10 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
-      title: "Frontend Engineer Intern",
+      title: "Freelance Web Dev Project",
       desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
       className: "md:col-span-2",
-      thumbnail: "/exp1.svg",
+      thumbnail: "/exp4.svg",
     },
     // {
     //   id: 2,
@@ -203,16 +203,21 @@ export const navItems = [
   export const socialMedia = [
     {
       id: 1,
+      img: "/resume.png",
+      link: "https://drive.google.com/file/d/1l-QD9kwvzGq_WEsSngNpToAlSOxfQCUf/view?usp=sharing",
+    },
+    {
+      id: 2,
       img: "/git.svg",
       link: "https://github.com/AryanBiswas198",
     },
     {
-      id: 2,
+      id: 3,
       img: "/leetcode.png",
       link: "https://leetcode.com/u/aryan_b198/",
     },
     {
-      id: 3,
+      id: 4,
       img: "/link.svg",
       link: "https://linkedin.com/in/aryan-biswass",
     },
