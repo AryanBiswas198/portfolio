@@ -11,7 +11,9 @@ const Footer = () => {
     const router = useRouter();
 
     const handleClick = (link?: string) => {
-        router.push(link);
+        if(link){
+            router.push(link);
+        }
     }
 
   return (
