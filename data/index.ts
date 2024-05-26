@@ -81,7 +81,7 @@ export const navItems = [
       id: 2,
       title: "YouTube Clone",
       des: "Responsive YouTube Clone developed with ReactJS, Tailwind CSS, JS, and Rapid API, featuring dynamic video suggestions.",
-      img: "/yt2.png", 
+      img: "/yt1.png", 
       iconLists: ["/api.png", "/JS.png", "/re.svg", "/tail.svg", "/cloud.svg"],
       link: "https://youtube-clone-aryan-biswas.vercel.app/",
     },
