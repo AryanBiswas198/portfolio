@@ -10,7 +10,7 @@ import { SparklesCore } from "./ui/sparkles";
 const Hero = () => {
   const words = ["Flexible", "Dynamic", "Modern", "Versatile", "Seamless", "Scalable"];
   return (
-    <Vortex className="pb-20 pt-36 " backgroundColor="black" rangeY={800} particleCount={200}>
+    <Vortex className="pb-20 pt-36 " backgroundColor="black" rangeY={800} particleCount={150}>
       {/* // <div className="pb-20 pt-36 ">  */}
       <div className="h-screen w-screen flex items-center justify-center absolute top-0 left-0">
         {/* Radial gradient for the container to give a faded look */}

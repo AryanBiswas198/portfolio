@@ -18,7 +18,7 @@ const RecentProjects = () => {
     }
     
   return (
-    <div className='mt-5 pb-20 bg-grid-small-white/[0.2]' id='projects'>
+    <div className='mt-5 pb-20 ' id='projects'>
         <ContainerScroll
         titleComponent={
           <>

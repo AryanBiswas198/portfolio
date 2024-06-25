@@ -73,7 +73,7 @@ export const BentoGridItem = ({
         className
       )}
     >
-      <div className={`${id === 6 && "flex justify-center"} ${id === 5 && "cursor-pointer"} ${(id === 3 || id === 4) && "bg-grid-small-white/[0.2]"} h-full font-serif`}
+      <div className={`${id === 6 && "flex justify-center"} ${id === 5 && "cursor-pointer"} ${(id === 3 || id === 4) && "md:bg-grid-small-white/[0.2]"} h-full font-serif`}
         onClick={id === 5 ? handleClick : undefined}>
         <div className="w-full h-full absolute">
           {img && (
