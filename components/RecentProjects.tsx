@@ -5,6 +5,9 @@ import React from 'react'
 import { PinContainer } from './ui/3d-pin'
 import { FaLocationArrow } from 'react-icons/fa6'
 import { useRouter } from 'next/navigation'
+import { ContainerScroll } from './ui/container-scroll-animation';
+import GithubProfile from "@/public/GithubProfile.png"
+import Image from 'next/image';
 
 const RecentProjects = () => {
     
@@ -15,10 +18,34 @@ const RecentProjects = () => {
     }
     
   return (
-    <div className='py-20' id='projects'>
+    <div className='mt-5 pb-20 bg-grid-small-white/[0.2]' id='projects'>
+        <ContainerScroll
+        titleComponent={
+          <>
+            <h1 className="text-2xl md:text-4xl tracking-wide font-semibold text-black dark:text-white">
+              Explore my projects on <br />
+              <span className="text-6xl md:text-[6rem] text-purple font-bold mt-1 leading-none tracking-wide">
+                Github
+              </span>
+            </h1>
+          </>
+        }
+      >
+        <Image
+            src={GithubProfile}
+            alt="hero"
+            // height={720}
+            // width={1400}
+            className="mx-auto rounded-2xl object-cover h-full object-left-top cursor-pointer"
+            draggable={false}
+            onClick={() => window.open('https://github.com/AryanBiswas198', '_blank')}
+        />
+      </ContainerScroll>
+
+
         <h1 className='heading'>
             A small selection of {' '}
-            <span className='text-purple'>recent projects</span>
+            <span className='text-purple'>Recent Projects</span>
         </h1>
 
         <div className='flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10'>

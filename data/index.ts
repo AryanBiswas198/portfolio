@@ -79,27 +79,27 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "YouTube Clone",
-      des: "Responsive YouTube Clone developed with ReactJS, Tailwind CSS, JS, and Rapid API, featuring dynamic video suggestions.",
-      img: "/yt1.png", 
-      iconLists: ["/api.png", "/JS.png", "/re.svg", "/tail.svg", "/cloud.svg"],
-      link: "https://youtube-clone-aryan-biswas.vercel.app/",
-    },
-    {
-      id: 3,
-      title: "Git-Scout",
-      des: "Responsive GitScout web app built with HTML, CSS, JavaScript, enabling GitHub profile search with adaptive interface.",
-      img: "/GitScout.png",
-      iconLists: ["/html.png", "/css.png", "/JS.png", "/api.png", "/cloud.svg"],
-      link: "https://git-scout-aryan.vercel.app/",
-    },
-    {
-      id: 4,
       title: "Taskify - Task Management System",
       des: "Sophisticated Todo App with MERN Stack, fortified with JWT integration, MongoDB Atlas, and streamlined task management.",
       img: "/Taskify.png",
       iconLists: ["/JS.png", "/mongo.png", "/node.png", "/express.png", "/re.svg", "/tail.svg"],
       link: "https://taskify-aryan.vercel.app/",
+    },
+    {
+      id: 3,
+      title: "Spotify Clone",
+      des: "Developed a dynamic ReactJS music player with TailwindCSS, using Samespace API for seamless animations and responsive design.",
+      img: "/SpotifyClone.png",
+      iconLists: ["/re.svg", "/tail.svg", "/JS.png", "/api.png", "/cloud.svg"],
+      link: "https://music-player-aryan-biswas.vercel.app/",
+    },
+    {
+      id: 4,
+      title: "YouTube Clone",
+      des: "Responsive YouTube Clone developed with ReactJS, Tailwind CSS, JS, and Rapid API, featuring dynamic video suggestions.",
+      img: "/yt1.png", 
+      iconLists: ["/api.png", "/JS.png", "/re.svg", "/tail.svg", "/cloud.svg"],
+      link: "https://youtube-clone-aryan-biswas.vercel.app/",
     },
   ];
   
@@ -204,7 +204,7 @@ export const navItems = [
     {
       id: 1,
       img: "/resume.png",
-      link: "https://drive.google.com/file/d/1l-QD9kwvzGq_WEsSngNpToAlSOxfQCUf/view?usp=sharing",
+      link: "https://drive.google.com/file/d/14rP7Wq2LqzZK_WQBsiBSYTNHbwDx37Xh/view",
     },
     {
       id: 2,

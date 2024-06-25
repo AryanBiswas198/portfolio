@@ -5,6 +5,9 @@ import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa6'
 import { socialMedia } from '@/data'
 import { useRouter } from 'next/navigation';
+import { BackgroundBeams } from './ui/background-beams';
+import { WavyBackground } from './ui/wavy-background';
+import { SparklesCore } from './ui/sparkles';
 
 const Footer = () => {
 
@@ -17,9 +20,21 @@ const Footer = () => {
     }
 
   return (
-    <footer className='w-full pb-10 mb-[100px] md:mb-5' id="contact">
-        <div className='w-full absolute left-0 -bottom-30 md:-bottom-64 min-h-96 '>
+    <div className='w-full relative pt-14 pb-6' id="contact">
+        {/* <div className='w-full absolute left-0 -bottom-30 md:-bottom-64 min-h-96 '>
             <img src='/footer-grid.svg' alt='grid' className='w-full h-full opacity-50' />
+        </div> */}
+
+        <div className="w-full absolute top-0 h-screen">
+            <SparklesCore
+            id="tsparticlesfullpage"
+            background="transparent"
+            minSize={0.6}
+            maxSize={1.4}
+            particleDensity={100}
+            className="w-full h-full"
+            particleColor="#FFFFFF"
+            />
         </div>
 
         <div className='flex flex-col items-center '>
@@ -54,7 +69,8 @@ const Footer = () => {
                 ))}
             </div>
         </div>
-    </footer>
+        {/* <BackgroundBeams /> */}
+    </div>
   )
 }
 

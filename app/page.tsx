@@ -12,18 +12,18 @@ import { FaHome } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip font-serif">
-      <div className="max-w-7xl w-full font-serif">
-        <FloatingNav navItems={navItems} />
-        <Hero />
-        <Grid />
-        <RecentProjects />
-        {/* <Clients />  */}
-        {/* Remove Clients section later */}
-        <Experience />
-        <Approach />
-        <Footer />
-      </div>
+    <main className="relative bg-black flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip font-serif">
+        <div className="max-w-7xl w-full font-serif">
+          <FloatingNav navItems={navItems} />
+          <Hero />
+          <Grid />
+          <RecentProjects />
+          {/* <Clients />  */}
+          {/* Remove Clients section later */}
+          <Experience />
+          <Approach />
+          <Footer />
+        </div>
     </main>
   );
 }

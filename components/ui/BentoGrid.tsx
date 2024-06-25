@@ -8,6 +8,7 @@ import animationData from '@/data/confetti.json';
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import { useRouter } from "next/navigation";
+import { Meteors } from "./meteors";
 
 export const BentoGrid = ({
   className,
@@ -68,16 +69,11 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none bg-white justify-between flex flex-col space-y-4 border border-white/[0.1] font-serif ",
+        "row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none bg-white dark:bg-black justify-between flex flex-col space-y-4 border border-white/[0.1] font-serif ",
         className
       )}
-      style={{
-        background: "rgb(4,7,29)",
-        backgroundColor:
-          "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-      }}
     >
-      <div className={`${id === 6 && "flex justify-center"} ${id === 5 && "cursor-pointer"} h-full font-serif`}
+      <div className={`${id === 6 && "flex justify-center"} ${id === 5 && "cursor-pointer"} ${(id === 3 || id === 4) && "bg-grid-small-white/[0.2]"} h-full font-serif`}
         onClick={id === 5 ? handleClick : undefined}>
         <div className="w-full h-full absolute">
           {img && (
@@ -123,25 +119,27 @@ export const BentoGridItem = ({
 
           {id === 2 && <GlobeDemo />}
 
+          { id === 2 && <Meteors number={20} />}
+
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               <div className="flex flex-col gap-3 lg:gap-8">
                 {["Tailwind CSS", "React.js", "TypeScript"].map((item) => (
                   <span
                     key={item}
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-gray-900"
                   >
                     {item}
                   </span>
                 ))}
-                <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]"/>
+                <span className="py-4 px-3 rounded-lg text-center bg-gray-900"/>
               </div>
               <div className="flex flex-col gap-3 lg:gap-8">
-                <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]"/>
+                <span className="py-4 px-3 rounded-lg text-center bg-gray-900"/>
                 {["Next.js", "Node.js", "MongoDB"].map((item) => (
                   <span
                     key={item}
-                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-gray-900"
                   >
                     {item}
                   </span>
