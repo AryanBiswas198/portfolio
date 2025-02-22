@@ -38,7 +38,7 @@ const Hero = () => {
           </div>
 
           <p className="text-center md:tracking-wider my-4 mt-3 text-sm md:text-lg lg:text-2xl ">
-            Hi, I&apos;m Aryan Biswas, a Software Developer based in Pune-India.
+            Hi, I&apos;m Aryan Biswas, a Software Engineer based in Pune-India.
           </p>
 
           <a href="#about">
