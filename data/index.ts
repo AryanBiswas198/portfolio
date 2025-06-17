@@ -172,25 +172,32 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
+      title: "Software Development Engineer - 1",
+      desc: "Mar 2025 - Present",
+      className: "md:col-span-2",
+      thumbnail: "/yugTechLogo.webp", 
+    },
+    {
+      id: 2,
+      title: "Software Engineer",
+      desc: "Aug 2024 - Feb 2025",
+      className: "md:col-span-2",
+      thumbnail: "/FrobadaLogo.svg", 
+    },
+    {
+      id: 3,
       title: "Full Stack Developer",
       desc: "Mar 2023 - June 2024",
       className: "md:col-span-2",
       thumbnail: "/exp4.svg",
     },
-    {
-      id: 2,
-      title: "Software Engineer",
-      desc: "Aug 2024 - Present",
-      className: "md:col-span-2",
-      thumbnail: "/FrobadaLogo.svg", 
-    }
   ];
   
   export const socialMedia = [
     {
       id: 1,
       img: "/resume.png",
-      link: "https://drive.google.com/file/d/12VYa4I0rMCLefPboEhscCIWiSD-ZihGB/view?usp=sharing",
+      link: "https://drive.google.com/file/d/1f9MkpaZNdlY5XJ5AQjH-WdTrmKMYrqfD/view?usp=sharing",
     },
     {
       id: 2,

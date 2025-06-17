@@ -63,7 +63,7 @@ export const BentoGridItem = ({
   }
 
   const handleClick = () => {
-    router.push("https://github.com/AryanBiswas198/Employify-backend");
+    router.push("https://www.mycourtly.com/");
   }
 
   return (
@@ -114,7 +114,7 @@ export const BentoGridItem = ({
             {description}
           </div>
           <div className={`font-serif font-bold text-lg lg:text-3xl tracking-wide max-w-96 z-10 ${id === 2 && 'lg:text-[1.5rem]'}`}>
-            {title} {id === 5 && <span className="text-purple">Employify</span>}
+            {title} {id === 5 && <span className="text-purple">Courtly (Phase-1)</span>}
           </div>
 
           {id === 2 && <GlobeDemo />}
@@ -136,7 +136,7 @@ export const BentoGridItem = ({
               </div>
               <div className="flex flex-col gap-3 lg:gap-8">
                 <span className="py-4 px-3 rounded-lg text-center bg-gray-900"/>
-                {["Next.js", "Node.js", "MongoDB"].map((item) => (
+                {["Next.js", "Node.js", "React Native"].map((item) => (
                   <span
                     key={item}
                     className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-gray-900"
